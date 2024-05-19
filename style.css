@@ -1,0 +1,189 @@
+/* Reset some default styles */
+html, body, h1, h2, p, div, span, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set background and font styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s ease, background-image 0.3s ease;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .canvas {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .button {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .button span {
+    position: absolute;
+    bottom: 5px;
+    font-size: 0.8rem;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #grey {
+    background: grey;
+  }
+  
+  #white {
+    background: white;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  #blue {
+    background: blue;
+  }
+  
+  #yellow {
+    background: yellow;
+    color: #333;
+  }
+  
+  #green {
+    background: green;
+  }
+  
+  #red {
+    background: red;
+  }
+  
+  #purple {
+    background: purple;
+  }
+  
+  #orange {
+    background: orange;
+  }
+  
+  .custom-color {
+    margin-top: 20px;
+  }
+  
+  #colorPicker {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #applyColor {
+    padding: 0.5rem 1rem;
+    margin-left: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #applyColor:hover {
+    background-color: #555;
+  }
+  
+  .reset-button {
+    margin-top: 20px;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reset-button:hover {
+    background-color: #555;
+  }
+  
+  footer {
+    margin-top: 20px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 600px) {
+    .button {
+      width: 60px;
+      height: 60px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1rem;
+    }
+  
+    .custom-color,
+    .reset-button {
+      padding: 0.5rem 0.5rem;
+      margin-top: 10px;
+    }
+  
+    #applyColor,
+    #reset {
+      padding: 0.5rem;
+      margin-left: 5px;
+    }
+  }
+  
